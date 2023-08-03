@@ -1,0 +1,220 @@
+body {
+  font-family: "Poppins";
+  overflow: hidden;
+  color: #333333;
+}
+
+#background {
+  height: 1500px;
+  width: 1500px;
+  border-radius: 50%;
+  z-index: -3;
+  position: absolute;
+  top: -84%;
+  right: -7%;
+}
+
+/* Navbar Styling  */
+nav {
+  width: 80%;
+  margin: auto;
+  padding-top: 2%;
+  display: grid;
+  grid-template-columns: 20% 75% 5%;
+  font-weight: 500;
+}
+
+/* Logo part  */
+.logo {
+  display: flex;
+}
+
+.logo h2 {
+  display: inline-block;
+  margin: 10px;
+  margin-left: 0;
+  font-size: 18px;
+}
+
+/* Making the logo  */
+#foodSpin {
+  background: #ff922c;
+  width: 16px;
+  height: 16px;
+  margin: 10px;
+  padding: 5px;
+  position: relative;
+  border-radius: 50%;
+}
+
+#foodSpin div {
+  background-color: #ffffff;
+  height: 16px;
+  width: 8px;
+  border-radius: 0 0 50% 50%;
+  position: absolute;
+  bottom: 2px;
+  left: 8.6px;
+}
+
+#foodSpin div::before {
+  content: "";
+  background: #ff922c;
+  display: block;
+  height: 16px;
+  width: 6.3px;
+  transform: rotate(21deg);
+  position: absolute;
+  left: -4px;
+  top: -4px;
+}
+
+#foodSpin div::after {
+  content: "";
+  background: #ff922c;
+  display: block;
+  height: 16px;
+  position: absolute;
+  width: 6.3px;
+  transform: rotate(-21deg);
+  left: 6px;
+  top: -3px;
+}
+
+/* nalinks  */
+.navlinks ul {
+  list-style: none;
+  display: flex;
+}
+
+.navlinks li {
+  margin: 0 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.cart {
+  margin-top: 8px;
+}
+
+/* text content */
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  position: absolute;
+  top: 38%;
+  left: 11%;
+}
+
+.content h1 {
+  margin: 0;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 66px;
+  letter-spacing: 0em;
+}
+
+.content h2 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 50px;
+  letter-spacing: 0em;
+  margin: 10px 0;
+}
+
+.content p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.content button {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  width: 163px;
+  height: 48px;
+  border-radius: 69px;
+  background: #ff922c;
+  color: #ffffff;
+  box-shadow: 0px 20px 40px 0px #f4e2d1;
+  border: none;
+  margin: 25px 0;
+}
+
+/* circle  */
+.circle {
+  height: 400px;
+  width: 800px;
+  border-radius: 400px 400px 0 0;
+  border: 4px dashed #ff922c;
+  border-bottom: none;
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  z-index: -2;
+}
+
+.circle::before {
+  content: "";
+  position: relative;
+  top: 267px;
+  right: 88px;
+  background-color: #ffffff;
+  display: block;
+  height: 150px;
+  width: 150px;
+  transform: rotate(30deg);
+}
+
+.circle::after {
+  content: "";
+  position: relative;
+  top: 110px;
+  left: 742px;
+  background-color: #ffffff;
+  display: block;
+  height: 150px;
+  width: 150px;
+  transform: rotate(150deg);
+}
+
+.circle img {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+  border-radius: 50%;
+  transition: opacity 0.5s, top 0.5s, left 0.5s;
+}
+
+.selectedFood img{
+  height: 300px;
+  width: 300px;
+  left: 245px;
+  top: 200px;
+}
+
+.arrowButtons{
+  width: 85%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 80%;
+    left: 25%;
+}
+
+/* footer  */
+footer {
+  color: #000000;
+  font-weight: 400;
+  position: absolute;
+  bottom: 20px;
+  left: 11%;
+}
